@@ -34,7 +34,7 @@ class KingdomsController < ApplicationController
   
     def kingdom_params
       # whitelist params
-      params.permit(:name, :population
+      params.permit(:name, :population)
     end
   
     def set_kingdom

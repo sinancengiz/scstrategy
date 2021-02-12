@@ -10,20 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_12_010422) do
+ActiveRecord::Schema.define(version: 2021_02_12_015837) do
 
   create_table "cities", force: :cascade do |t|
     t.string "name"
     t.integer "population"
-    t.string "color"
+    t.integer "kingdom_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "kingdoms", force: :cascade do |t|
     t.string "name"
-    t.string "population"
     t.string "color"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
